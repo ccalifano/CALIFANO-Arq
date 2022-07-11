@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// VARIABLES van SIEMPRE arriba de SECCIONES //
+@import "./variables/colores";
+@import "./variables/tipografias";
+
+@import "./secciones/general";
+@import "./secciones/nav";
+@import "./secciones/main-index";
+@import "./secciones/footer";

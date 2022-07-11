@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+.navbar {
+  background-color: #faedcd; }
+
+.imagenFondo {
+  background-image: url(./img/fondo-madera-rustica2); }
+
+.botonWhatsapp {
+  display: inline-block;
+  background-color: blue;
+  margin: 2rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  text-decoration: none; }
+  .botonWhatsapp:hover {
+    background-color: green;
+    color: blue; }
+
+footer {
+  background-color: #faedcd; }
