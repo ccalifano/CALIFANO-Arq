@@ -1,3 +1,25 @@
-.navbar{
-    background-color: $marronClaro;
- }
+.navbar {
+    background-color: $marronClaroPastel;
+    display: flex;
+    align-items: flex-end;
+
+    h1 {
+        color: $verdeClaro;
+    }
+
+    .nav-link {
+        color: $verdeOscuro;
+
+        &:hover {
+            transform: scale(1.05);
+            color: lighten($color: $verdeOscuro, $amount: 20);
+            font-weight: bold;
+        }
+
+        // .active {
+        //     &:active {
+        //         font-size: 3rem;
+        //     }
+
+    }
+}

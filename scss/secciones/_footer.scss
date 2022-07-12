@@ -1,3 +1,24 @@
-footer{
-    background-color: $marronClaro;
+footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: $marronClaroPastel;
+
+    div {
+        display: flex;
+        align-items: flex-end;
+
+        p {
+            padding-right: 1rem;
+            color: $verdeOscuro;
+        }
+
+        a {
+            &:hover {
+                transform: scale(1.1, 1.1);
+                transition: 8ms;
+            }
+        }
+    }
 }

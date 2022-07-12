@@ -1,18 +1,29 @@
 .imagenFondo {
-    background-image: url(./img/fondo-madera-rustica2);
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/fondo-madera-rustica2.jpg);
+    background-size: cover;
+    height: 80vh;
 
-.botonWhatsapp {
-    display: inline-block;
-    background-color: blue;
-    margin: 2rem;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    border-radius: 30px;
-    text-decoration: none;
+    h2 {
+        @extend %estiloTitulos;
+    }
 
-    &:hover {
-        background-color: green;
-        color: blue;
+    h3 {
+        @extend %estiloParrafos;
+    }
+
+    button {
+        @extend %botonesConsulta;
+
+        &:hover {
+            background-color: $verdeClaro;
+            color: $crema;
+            border: solid 2px $crema;
+            font-size: 1.3rem;
+            transform: scale(1.1,1.1);
+            transition: 1s;
+        }
     }
 }
