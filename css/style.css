@@ -36,6 +36,10 @@
   text-decoration: none;
   max-width: 40%; }
 
+.imagenFondoTransparencia .container_contacto .separador {
+  background-color: #bc6c25;
+  height: 3px; }
+
 body {
   font-family: "Poppins", sans-serif; }
 
@@ -44,19 +48,19 @@ body {
   display: flex;
   align-items: flex-end; }
   .navbar h1 {
-    color: #606c38; }
+    color: #eab479; }
   .navbar .nav-link {
-    color: #283618; }
+    color: #d4a373; }
     .navbar .nav-link:hover {
       transform: scale(1.05);
-      color: #5c7d37;
+      color: #e0bd9a;
       font-weight: bold; }
 
 .imagenFondo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../img/fondo-madera-rustica2.jpg);
+  background-image: url(../img/textura-fondo5.jpg);
   background-size: cover;
   height: 80vh; }
   .imagenFondo button:hover {
@@ -66,6 +70,21 @@ body {
     font-size: 1.3rem;
     transform: scale(1.1, 1.1);
     transition: 1s; }
+
+.imagenFondoTransparencia {
+  background-image: url(../img/textura-fondo5-transparencia.png);
+  background-size: cover;
+  height: 80vh; }
+  .imagenFondoTransparencia .container_contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    padding: 1rem 2rem; }
+  .imagenFondoTransparencia .row_contacto {
+    display: flex;
+    align-items: center;
+    max-width: 95%;
+    padding: 1rem 2rem; }
 
 footer {
   padding: 1rem;
@@ -78,7 +97,10 @@ footer {
     align-items: flex-end; }
     footer div p {
       padding-right: 1rem;
-      color: #283618; }
+      color: #d4a373; }
     footer div a:hover {
       transform: scale(1.1, 1.1);
       transition: 8ms; }
+  footer p {
+    padding-left: 1rem;
+    color: #d4a373; }

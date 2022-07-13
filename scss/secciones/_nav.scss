@@ -4,15 +4,15 @@
     align-items: flex-end;
 
     h1 {
-        color: $verdeClaro;
+        color: $amarilloPastelOscuro;
     }
 
     .nav-link {
-        color: $verdeOscuro;
+        color: $marronOscuroPastel;
 
         &:hover {
             transform: scale(1.05);
-            color: lighten($color: $verdeOscuro, $amount: 20);
+            color: lighten($color: $marronOscuroPastel, $amount: 10);
             font-weight: bold;
         }
 
