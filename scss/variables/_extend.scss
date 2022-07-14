@@ -43,6 +43,8 @@
 %separador {
     background-color: $marronOscuro;
     height: 3px;
+    border: none;
+     margin: 0.5rem auto;
 }
 
 %botonForm {
@@ -55,11 +57,18 @@
     font-size: 1.2rem;
     border: solid 4px $celestePastel;
     border-radius: 10px;
-        max-width: 50%;
+    max-width: 50%;
 }
 
-%fondoTransparencia{
+%fondoTransparencia {
     background-image: url(../img/textura-fondo5-transparencia.png);
     background-size: cover;
     height: 80vh;
+}
+
+%mainSecciones{
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    padding: 1rem 2rem;
 }

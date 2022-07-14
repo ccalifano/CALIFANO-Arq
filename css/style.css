@@ -10,7 +10,7 @@
   font-size: 2.5rem;
   color: black; }
 
-.imagenFondoTransparencia h2 {
+.imagenFondoTransparencia .main_secciones h2 {
   padding-top: 2rem;
   font-size: 2.5rem;
   color: black; }
@@ -41,9 +41,11 @@
   text-decoration: none;
   max-width: 40%; }
 
-.imagenFondoTransparencia .container_contacto .separador, .imagenFondoTransparencia .separador {
+.imagenFondoTransparencia .main_secciones .separador {
   background-color: #bc6c25;
-  height: 3px; }
+  height: 3px;
+  border: none;
+  margin: 0.5rem auto; }
 
 .imagenFondoTransparencia .row_contacto .botonForm {
   display: flex;
@@ -61,6 +63,12 @@
   background-image: url(../img/textura-fondo5-transparencia.png);
   background-size: cover;
   height: 80vh; }
+
+.imagenFondoTransparencia .main_secciones {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+  padding: 1rem 2rem; }
 
 body {
   font-family: "Poppins", sans-serif; }
@@ -80,8 +88,8 @@ body {
 
 .imagenFondo {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: url(../img/textura-fondo5.jpg);
   background-size: cover;
   height: 80vh; }
@@ -92,12 +100,8 @@ body {
     font-size: 1.3rem;
     transform: scale(1.1, 1.1);
     transition: 1s; }
-
-.imagenFondoTransparencia .container_contacto {
-  display: flex;
-  flex-direction: column;
-  max-width: 95%;
-  padding: 1rem 2rem; }
+  .imagenFondo .imgIndex {
+    width: 40vw; }
 
 .imagenFondoTransparencia .row_contacto {
   display: flex;
@@ -105,36 +109,38 @@ body {
   max-width: 95%;
   padding: 1rem 2rem; }
   .imagenFondoTransparencia .row_contacto .botonForm:hover {
-    background-color: #fcf2af; }
+    background-color: #fdf6c7; }
 
-.imagenFondoTransparencia .servicios {
-  width: 80%;
-  height: 50%;
-  margin: 0.5rem; }
-  .imagenFondoTransparencia .servicios__titulo {
-    box-shadow: 2px 4px #2836188d;
-    background-color: black; }
-  .imagenFondoTransparencia .servicios__descripcion {
-    display: flex;
-    flex-direction: column;
-    list-style: inside;
-    margin: 5px auto;
-    padding: 20px;
-    max-width: 75%;
-    height: 80%;
-    background-color: #faedcd97;
-    color: black;
-    border-radius: 10px;
-    box-shadow: 2px 4px black; }
-    .imagenFondoTransparencia .servicios__descripcion__subtitulo {
-      font-size: 1.5rem;
-      display: flex;
+.imagenFondoTransparencia .container_servicios {
+  max-width: 95%;
+  padding: .5rem 3rem; }
+  .imagenFondoTransparencia .container_servicios .servicios {
+    margin: 0.5rem; }
+    .imagenFondoTransparencia .container_servicios .servicios__titulo {
       text-align: center;
-      justify-content: center; }
-    .imagenFondoTransparencia .servicios__descripcion__item {
-      padding: 1rem;
-      font-size: 1.5rem;
-      font-weight: bold; }
+      margin-bottom: 2rem;
+      padding: .7rem;
+      border-radius: 10px;
+      box-shadow: 2px 4px #b0c5c0;
+      background-color: #84a59d; }
+    .imagenFondoTransparencia .container_servicios .servicios__descripcion {
+      display: flex;
+      flex-direction: column;
+      margin: 5px auto;
+      padding: 20px;
+      max-width: 90%;
+      background-color: #fefae0;
+      color: black;
+      border-radius: 10px;
+      box-shadow: 2px 4px #fcf2af; }
+      .imagenFondoTransparencia .container_servicios .servicios__descripcion p {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center; }
+      .imagenFondoTransparencia .container_servicios .servicios__descripcion li {
+        padding: .5rem;
+        font-size: 1.2rem;
+        font-weight: bold; }
 
 footer {
   padding: 1rem;

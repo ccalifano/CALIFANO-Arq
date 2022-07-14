@@ -1,48 +1,56 @@
 .imagenFondoTransparencia {
     @extend %fondoTransparencia;
 
-    h2 {
-        @extend %estiloTitulos;
-    }
+    .main_secciones {
+        @extend %mainSecciones;
 
-    .separador {
-        @extend %separador;
-    }
-
-    .servicios {
-        width: 80%;
-        height: 50%;
-        margin: 0.5rem;
-
-        &__titulo {
-            box-shadow: 2px 4px #2836188d;
-            background-color: black;
+        h2 {
+            @extend %estiloTitulos;
         }
 
-        &__descripcion {
-            display: flex;
-            flex-direction: column;
-            list-style: inside;
-            margin: 5px auto;
-            padding: 20px;
-            max-width: 75%;
-            height: 80%;
-            background-color: $maronClaroTransparente;
-            color: black;
-            border-radius: 10px;
-            box-shadow: 2px 4px black;
+        .separador {
+            @extend %separador;
+        }
+    }
 
-            &__subtitulo {
-                font-size: 1.5rem;
-                display: flex;
+    .container_servicios {
+        max-width: 95%;
+        padding: .5rem 3rem;
+
+        .servicios {
+            margin: 0.5rem;
+
+            &__titulo {
                 text-align: center;
-                justify-content: center;
+                margin-bottom: 2rem;
+                padding: .7rem;
+                border-radius: 10px;
+                box-shadow: 2px 4px lighten($color: $celestePastel, $amount: 15);
+                background-color: $celestePastel;
             }
 
-            &__item {
-                padding: 1rem;
-                font-size: 1.5rem;
-                font-weight: bold;
+            &__descripcion {
+                display: flex;
+                flex-direction: column;
+                margin: 5px auto;
+                padding: 20px;
+                max-width: 90%;
+                background-color: $crema;
+                color: black;
+                border-radius: 10px;
+                box-shadow: 2px 4px darken($color: $cremaPastel, $amount: 10);
+
+                p {
+                    font-size: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                li {
+                    padding: .5rem;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
             }
         }
     }

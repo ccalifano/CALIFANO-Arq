@@ -1,11 +1,12 @@
 .imagenFondoTransparencia {
     @extend %fondoTransparencia;
 
-    .container_contacto {
-        display: flex;
-        flex-direction: column;
-        max-width: 95%;
-        padding: 1rem 2rem;
+    .main_secciones {
+        @extend %mainSecciones;
+
+        h2 {
+            @extend %estiloTitulos;
+        }
 
         .separador {
             @extend %separador;
@@ -22,7 +23,7 @@
             @extend %botonForm;
 
             &:hover {
-                background-color: darken($color: $crema, $amount: 10);
+                background-color: darken($color: $crema, $amount: 5);
             }
         }
     }
