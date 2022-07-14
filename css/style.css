@@ -28,7 +28,7 @@
   margin: 15px auto;
   font-size: 1.5rem; }
 
-.imagenFondo button {
+.imagenFondo button, .imagenFondoTransparencia button {
   display: flex;
   justify-content: center;
   background-color: #fefae0;
@@ -62,13 +62,19 @@
 .imagenFondoTransparencia {
   background-image: url(../img/textura-fondo5-transparencia.png);
   background-size: cover;
-  height: 80vh; }
+  height: 100vh; }
 
 .imagenFondoTransparencia .main_secciones {
   display: flex;
   flex-direction: column;
   max-width: 95%;
   padding: 1rem 2rem; }
+
+.imagenFondoTransparencia .grilla .trabajo3, .imagenFondoTransparencia .grilla .trabajo5 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-size: cover; }
 
 body {
   font-family: "Poppins", sans-serif; }
@@ -132,7 +138,8 @@ body {
       background-color: #fefae0;
       color: black;
       border-radius: 10px;
-      box-shadow: 2px 4px #fcf2af; }
+      box-shadow: 2px 4px #fcf2af;
+      height: 50vh; }
       .imagenFondoTransparencia .container_servicios .servicios__descripcion p {
         font-size: 1.5rem;
         display: flex;
@@ -141,6 +148,43 @@ body {
         padding: .5rem;
         font-size: 1.2rem;
         font-weight: bold; }
+
+.imagenFondoTransparencia button {
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.imagenFondoTransparencia .grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 25vw);
+  grid-template-rows: repeat(4, 25vw);
+  grid-template-areas: "trabajo1 trabajo2 trabajo3" "trabajo1 trabajo4 trabajo4" "trabajo6 trabajo5 trabajo5" "trabajo7 trabajo5 trabajo5";
+  justify-content: center;
+  height: 75vh;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin: auto auto; }
+  .imagenFondoTransparencia .grilla .trabajo1 {
+    grid-area: trabajo1; }
+  .imagenFondoTransparencia .grilla .trabajo2 {
+    grid-area: trabajo2; }
+  .imagenFondoTransparencia .grilla .trabajo3 {
+    grid-area: trabajo3;
+    background-image: url(../img/interior-amplio.jpeg); }
+    .imagenFondoTransparencia .grilla .trabajo3 p {
+      text-align: center; }
+  .imagenFondoTransparencia .grilla .trabajo4 {
+    grid-area: trabajo4; }
+  .imagenFondoTransparencia .grilla .trabajo5 {
+    grid-area: trabajo5;
+    background-image: url(../img/living-calido.jpeg); }
+    .imagenFondoTransparencia .grilla .trabajo5 .contenedorImg p {
+      background-color: rgba(255, 255, 255, 0.432);
+      text-align: center; }
+  .imagenFondoTransparencia .grilla .trabajo6 {
+    grid-area: trabajo6; }
+  .imagenFondoTransparencia .grilla .trabajo7 {
+    grid-area: trabajo7; }
 
 footer {
   padding: 1rem;

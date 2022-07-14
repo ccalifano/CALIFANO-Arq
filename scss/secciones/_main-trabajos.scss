@@ -1,0 +1,64 @@
+.imagenFondoTransparencia {
+    @extend %fondoTransparencia;
+
+    .grilla {
+        @include displayCol(grid, $gridCol);
+        grid-template-rows: $gridRow;
+        grid-template-areas:
+            "trabajo1 trabajo2 trabajo3"
+            "trabajo1 trabajo4 trabajo4"
+            "trabajo6 trabajo5 trabajo5"
+            "trabajo7 trabajo5 trabajo5";
+        justify-content: center;
+        height: 75vh;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        margin: auto auto;
+
+        .trabajo1 {
+            grid-area: trabajo1;
+        }
+
+        .trabajo2 {
+            grid-area: trabajo2;
+        }
+
+        .trabajo3 {
+            grid-area: trabajo3;
+
+            @extend %imgTrabajos;
+            background-image: url(../img/interior-amplio.jpeg);
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .trabajo4 {
+            grid-area: trabajo4;
+        }
+
+        .trabajo5 {
+            grid-area: trabajo5;
+            @extend %imgTrabajos;
+            background-image: url(../img/living-calido.jpeg);
+            .contenedorImg {
+            
+
+                p {
+                    background-color: rgba(255, 255, 255, 0.432);
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .trabajo6 {
+            grid-area: trabajo6;
+        }
+
+        .trabajo7 {
+            grid-area: trabajo7;
+        }
+    }
+}

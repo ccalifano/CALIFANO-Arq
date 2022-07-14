@@ -44,7 +44,7 @@
     background-color: $marronOscuro;
     height: 3px;
     border: none;
-     margin: 0.5rem auto;
+    margin: 0.5rem auto;
 }
 
 %botonForm {
@@ -63,12 +63,19 @@
 %fondoTransparencia {
     background-image: url(../img/textura-fondo5-transparencia.png);
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
 }
 
-%mainSecciones{
+%mainSecciones {
     display: flex;
     flex-direction: column;
     max-width: 95%;
     padding: 1rem 2rem;
+}
+
+%imgTrabajos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-size: cover;
 }

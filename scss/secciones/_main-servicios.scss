@@ -39,6 +39,7 @@
                 color: black;
                 border-radius: 10px;
                 box-shadow: 2px 4px darken($color: $cremaPastel, $amount: 10);
+                height: 50vh;
 
                 p {
                     font-size: 1.5rem;
@@ -53,5 +54,12 @@
                 }
             }
         }
+    }
+
+    button {
+        @extend %botonesConsulta;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

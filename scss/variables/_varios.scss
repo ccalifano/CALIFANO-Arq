@@ -1,0 +1,9 @@
+//SEPARACIONES GRID TRABAJOS
+$gridCol: repeat(3,25vw);
+$gridRow: repeat(4,25vw);
+
+//MIXIN
+@mixin displayCol ($display,$columns){
+    display: $display;
+    grid-template-columns: $columns;
+}
