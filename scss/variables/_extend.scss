@@ -1,4 +1,4 @@
-%estiloTitulos{
+%estiloTituloPrincipal {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -6,13 +6,19 @@
     color: $tipografiaParrafos;
 }
 
-%estiloParrafos{
+%estiloTitulos {
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    color: $tipografiaParrafos;
+}
+
+%estiloParrafos {
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
     background-color: $maronClaroTransparente;
-    color: $tipografiaParrafos;
+    color: $marronOscuroPastel;
     border-radius: 1rem;
     padding: 3rem 1rem;
     max-width: 90%;
@@ -20,21 +26,40 @@
     font-size: 1.5rem;
 }
 
-%botonesConsulta{
-    display: flex; 
+%botonesConsulta {
+    display: flex;
     justify-content: center;
     background-color: $crema;
-    color: $verdeOscuro;
+    color: $rosaPastel;
     margin: 2rem;
     padding: 1.2rem;
     font-size: 1.2rem;
-    border: solid 4px $verdeOscuro;
+    border: solid 4px $celestePastel;
     border-radius: 30px;
     text-decoration: none;
     max-width: 40%;
 }
 
-%separador{
+%separador {
     background-color: $marronOscuro;
     height: 3px;
-   }
+}
+
+%botonForm {
+    display: flex;
+    justify-content: center;
+    background-color: $crema;
+    color: $rosaPastel;
+    margin: 1rem auto;
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
+    border: solid 4px $celestePastel;
+    border-radius: 10px;
+        max-width: 50%;
+}
+
+%fondoTransparencia{
+    background-image: url(../img/textura-fondo5-transparencia.png);
+    background-size: cover;
+    height: 80vh;
+}

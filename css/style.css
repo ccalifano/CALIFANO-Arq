@@ -10,13 +10,18 @@
   font-size: 2.5rem;
   color: black; }
 
+.imagenFondoTransparencia h2 {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  color: black; }
+
 .imagenFondo h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
   background-color: #faedcd97;
-  color: black;
+  color: #d4a373;
   border-radius: 1rem;
   padding: 3rem 1rem;
   max-width: 90%;
@@ -27,18 +32,35 @@
   display: flex;
   justify-content: center;
   background-color: #fefae0;
-  color: #283618;
+  color: #f28482;
   margin: 2rem;
   padding: 1.2rem;
   font-size: 1.2rem;
-  border: solid 4px #283618;
+  border: solid 4px #84a59d;
   border-radius: 30px;
   text-decoration: none;
   max-width: 40%; }
 
-.imagenFondoTransparencia .container_contacto .separador {
+.imagenFondoTransparencia .container_contacto .separador, .imagenFondoTransparencia .separador {
   background-color: #bc6c25;
   height: 3px; }
+
+.imagenFondoTransparencia .row_contacto .botonForm {
+  display: flex;
+  justify-content: center;
+  background-color: #fefae0;
+  color: #f28482;
+  margin: 1rem auto;
+  padding: .5rem 2rem;
+  font-size: 1.2rem;
+  border: solid 4px #84a59d;
+  border-radius: 10px;
+  max-width: 50%; }
+
+.imagenFondoTransparencia {
+  background-image: url(../img/textura-fondo5-transparencia.png);
+  background-size: cover;
+  height: 80vh; }
 
 body {
   font-family: "Poppins", sans-serif; }
@@ -64,27 +86,55 @@ body {
   background-size: cover;
   height: 80vh; }
   .imagenFondo button:hover {
-    background-color: #606c38;
+    background-color: #84a59d;
     color: #fefae0;
-    border: solid 2px #fefae0;
+    border: solid 4px #fefae0;
     font-size: 1.3rem;
     transform: scale(1.1, 1.1);
     transition: 1s; }
 
-.imagenFondoTransparencia {
-  background-image: url(../img/textura-fondo5-transparencia.png);
-  background-size: cover;
-  height: 80vh; }
-  .imagenFondoTransparencia .container_contacto {
+.imagenFondoTransparencia .container_contacto {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+  padding: 1rem 2rem; }
+
+.imagenFondoTransparencia .row_contacto {
+  display: flex;
+  align-items: center;
+  max-width: 95%;
+  padding: 1rem 2rem; }
+  .imagenFondoTransparencia .row_contacto .botonForm:hover {
+    background-color: #fcf2af; }
+
+.imagenFondoTransparencia .servicios {
+  width: 80%;
+  height: 50%;
+  margin: 0.5rem; }
+  .imagenFondoTransparencia .servicios__titulo {
+    box-shadow: 2px 4px #2836188d;
+    background-color: black; }
+  .imagenFondoTransparencia .servicios__descripcion {
     display: flex;
     flex-direction: column;
-    max-width: 95%;
-    padding: 1rem 2rem; }
-  .imagenFondoTransparencia .row_contacto {
-    display: flex;
-    align-items: center;
-    max-width: 95%;
-    padding: 1rem 2rem; }
+    list-style: inside;
+    margin: 5px auto;
+    padding: 20px;
+    max-width: 75%;
+    height: 80%;
+    background-color: #faedcd97;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 4px black; }
+    .imagenFondoTransparencia .servicios__descripcion__subtitulo {
+      font-size: 1.5rem;
+      display: flex;
+      text-align: center;
+      justify-content: center; }
+    .imagenFondoTransparencia .servicios__descripcion__item {
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold; }
 
 footer {
   padding: 1rem;

@@ -1,22 +1,29 @@
-.imagenFondoTransparencia{
-    background-image: url(../img/textura-fondo5-transparencia.png);
-    background-size: cover;
-    height: 80vh;
+.imagenFondoTransparencia {
+    @extend %fondoTransparencia;
 
-.container_contacto{
-    display: flex;
-    flex-direction: column;
-    max-width: 95%;
-    padding: 1rem 2rem;
+    .container_contacto {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        padding: 1rem 2rem;
 
-    .separador{
-        @extend %separador;
+        .separador {
+            @extend %separador;
+        }
+    }
+
+    .row_contacto {
+        display: flex;
+        align-items: center;
+        max-width: 95%;
+        padding: 1rem 2rem;
+
+        .botonForm {
+            @extend %botonForm;
+
+            &:hover {
+                background-color: darken($color: $crema, $amount: 10);
+            }
+        }
     }
 }
-
-.row_contacto{
-    display: flex;
-    align-items: center;
-    max-width: 95%;
-    padding: 1rem 2rem;
-}}

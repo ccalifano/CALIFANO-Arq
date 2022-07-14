@@ -1,0 +1,49 @@
+.imagenFondoTransparencia {
+    @extend %fondoTransparencia;
+
+    h2 {
+        @extend %estiloTitulos;
+    }
+
+    .separador {
+        @extend %separador;
+    }
+
+    .servicios {
+        width: 80%;
+        height: 50%;
+        margin: 0.5rem;
+
+        &__titulo {
+            box-shadow: 2px 4px #2836188d;
+            background-color: black;
+        }
+
+        &__descripcion {
+            display: flex;
+            flex-direction: column;
+            list-style: inside;
+            margin: 5px auto;
+            padding: 20px;
+            max-width: 75%;
+            height: 80%;
+            background-color: $maronClaroTransparente;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 2px 4px black;
+
+            &__subtitulo {
+                font-size: 1.5rem;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+
+            &__item {
+                padding: 1rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@
     height: 80vh;
 
     h2 {
-        @extend %estiloTitulos;
+        @extend %estiloTituloPrincipal;
     }
 
     h3 {
@@ -18,9 +18,9 @@
         @extend %botonesConsulta;
 
         &:hover {
-            background-color: $verdeClaro;
+            background-color: $celestePastel;
             color: $crema;
-            border: solid 2px $crema;
+            border: solid 4px $crema;
             font-size: 1.3rem;
             transform: scale(1.1,1.1);
             transition: 1s;
