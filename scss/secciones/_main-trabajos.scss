@@ -1,6 +1,3 @@
-.imagenFondoTransparencia {
-    @extend %fondoTransparencia;
-
     .grilla {
         @include displayCol(grid, $gridCol);
         grid-template-rows: $gridRow;
@@ -17,48 +14,102 @@
 
         .trabajo1 {
             grid-area: trabajo1;
+            @extend %imgTrabajos;
+            background-image: url(../img/living-calido-vertical.jpg);
+
+            &:hover {
+                @extend %hoverImgTrabajos;
+            }
+
+            p {
+                @extend %descripcionTrabajos;
+            }
         }
 
         .trabajo2 {
             grid-area: trabajo2;
+            @extend %imgTrabajos;
+            background-image: url(../img/interior-amplio.jpeg);
+
+            &:hover {
+                @extend %hoverImgTrabajos;
+            }
+
+            p {
+                @extend %descripcionTrabajos;
+            }
         }
 
         .trabajo3 {
             grid-area: trabajo3;
 
             @extend %imgTrabajos;
-            background-image: url(../img/interior-amplio.jpeg);
+            background-image: url(../img/interior-cerrado.jpeg);
+
+            &:hover {
+                @extend %hoverImgTrabajos;
+            }
 
             p {
-                text-align: center;
+                @extend %descripcionTrabajos;
             }
+
         }
 
         .trabajo4 {
             grid-area: trabajo4;
+            @extend %imgTrabajos;
+            background-image: url(../img/living-vajilla-horizontal.jpg);
+
+            &:hover {
+                @extend %hoverImgTrabajos;
+            }
+
+            p {
+                @extend %descripcionTrabajos;
+            }
+
         }
 
         .trabajo5 {
             grid-area: trabajo5;
             @extend %imgTrabajos;
-            background-image: url(../img/living-calido.jpeg);
-            .contenedorImg {
-            
+            background-image: url(../img/cocina-parrila-cuadrada.jpg);
 
-                p {
-                    background-color: rgba(255, 255, 255, 0.432);
-                    text-align: center;
-                }
+            &:hover {
+                @extend %hoverImgTrabajos;
             }
 
+            p {
+                @extend %descripcionTrabajos;
+            }
         }
 
         .trabajo6 {
             grid-area: trabajo6;
+            @extend %imgTrabajos;
+            background-image: url(../img/cocina-cuadrada.jpg);
+
+            &:hover {
+                @extend %hoverImgTrabajos;
+            }
+
+            p {
+                @extend %descripcionTrabajos;
+            }
         }
 
         .trabajo7 {
             grid-area: trabajo7;
+            @extend %imgTrabajos;
+            background-image: url(../img/cocina-angulo-cuadrada.jpg);
+
+            &:hover {
+                @extend %hoverImgTrabajos;
+            }
+
+            p {
+                @extend %descripcionTrabajos;
+            }
         }
     }
-}

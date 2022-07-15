@@ -1,4 +1,19 @@
-body{
-font-family: $Poppins;
+body {
+    font-family: $Poppins;
 }
 
+.imagenFondoTransparencia {
+    @extend %fondoTransparencia;
+
+    .titulo_secciones {
+        @extend %tituloSecciones;
+
+        h2 {
+            @extend %estiloTitulos;
+        }
+
+        .separador {
+            @extend %separador;
+        }
+    }
+}

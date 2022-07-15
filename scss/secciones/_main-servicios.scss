@@ -1,65 +1,49 @@
-.imagenFondoTransparencia {
-    @extend %fondoTransparencia;
+.container_servicios {
+    max-width: 95%;
+    padding: .5rem 3rem;
 
-    .main_secciones {
-        @extend %mainSecciones;
+    .servicios {
+        margin: 0.5rem;
 
-        h2 {
-            @extend %estiloTitulos;
+        &__titulo {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: .7rem;
+            border-radius: 10px;
+            box-shadow: 2px 4px lighten($color: $celestePastel, $amount: 15);
+            background-color: $celestePastel;
         }
 
-        .separador {
-            @extend %separador;
-        }
-    }
+        &__descripcion {
+            display: flex;
+            flex-direction: column;
+            margin: 5px auto;
+            padding: 20px;
+            max-width: 90%;
+            background-color: $crema;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 2px 4px darken($color: $cremaPastel, $amount: 10);
+            height: 50vh;
 
-    .container_servicios {
-        max-width: 95%;
-        padding: .5rem 3rem;
-
-        .servicios {
-            margin: 0.5rem;
-
-            &__titulo {
-                text-align: center;
-                margin-bottom: 2rem;
-                padding: .7rem;
-                border-radius: 10px;
-                box-shadow: 2px 4px lighten($color: $celestePastel, $amount: 15);
-                background-color: $celestePastel;
-            }
-
-            &__descripcion {
+            p {
+                font-size: 1.5rem;
                 display: flex;
-                flex-direction: column;
-                margin: 5px auto;
-                padding: 20px;
-                max-width: 90%;
-                background-color: $crema;
-                color: black;
-                border-radius: 10px;
-                box-shadow: 2px 4px darken($color: $cremaPastel, $amount: 10);
-                height: 50vh;
+                justify-content: center;
+            }
 
-                p {
-                    font-size: 1.5rem;
-                    display: flex;
-                    justify-content: center;
-                }
-
-                li {
-                    padding: .5rem;
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                }
+            li {
+                padding: .5rem;
+                font-size: 1.2rem;
+                font-weight: bold;
             }
         }
     }
+}
 
-    button {
-        @extend %botonesConsulta;
-        margin-bottom: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+button {
+    @extend %botonesConsulta;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }

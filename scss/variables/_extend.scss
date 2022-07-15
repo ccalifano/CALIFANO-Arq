@@ -38,6 +38,8 @@
     border-radius: 30px;
     text-decoration: none;
     max-width: 40%;
+    box-shadow: none;
+    outline: none;
 }
 
 %separador {
@@ -61,12 +63,11 @@
 }
 
 %fondoTransparencia {
-    background-image: url(../img/textura-fondo5-transparencia.png);
+    background-image: url(../img/textura-fondo5-transparencia.jpg);
     background-size: cover;
-    height: 100vh;
 }
 
-%mainSecciones {
+%tituloSecciones {
     display: flex;
     flex-direction: column;
     max-width: 95%;
@@ -78,4 +79,15 @@
     flex-direction: column;
     align-content: center;
     background-size: cover;
+}
+
+%hoverImgTrabajos{
+    transform: scale(1.01);
+    transition: 5ms;
+}
+
+%descripcionTrabajos {
+    background-color: $maronClaroTransparente;
+    text-align: center;
+    margin-top: .2rem;
 }

@@ -1,0 +1,13 @@
+.container_nosotros {
+    max-width: 95%;
+    margin: 1rem auto;
+
+    .row {
+        display: flex;
+        padding-bottom: 3rem;
+
+        h3 {
+            @extend %estiloParrafos;
+        }
+    }
+}
